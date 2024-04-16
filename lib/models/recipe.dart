@@ -3,7 +3,8 @@ import 'package:diet_plan/models/ingredients.dart';
 class Recipe {
   String recipename, imageUrl;
   final List<Ingredients> ingredients;
-  Recipe(this.recipename, this.imageUrl, this.ingredients);
+  final int servings;
+  Recipe(this.recipename, this.imageUrl, this.ingredients, this.servings);
 
   static List<Recipe> listofRecipes = [
     Recipe(
@@ -13,6 +14,7 @@ class Recipe {
         Ingredients(name: 'Cheese', quantity: 1, meassure: 'Slices'),
         Ingredients(name: 'Bread', quantity: 1, meassure: 'Slices'),
       ],
+      1,
     ),
     Recipe(
       'Cookies',
@@ -22,6 +24,7 @@ class Recipe {
         Ingredients(name: 'Butter', quantity: 1, meassure: '2 tablespoon'),
         Ingredients(name: 'Sugar', quantity: 1, meassure: '1 cup'),
       ],
+      2,
     ),
     Recipe(
       'Toast',
@@ -30,6 +33,7 @@ class Recipe {
         Ingredients(name: 'Butter', quantity: 1, meassure: '2 tablespoon'),
         Ingredients(name: 'Bread', quantity: 1, meassure: 'As of U Need'),
       ],
+      3,
     ),
     Recipe(
       'Fries',
@@ -38,6 +42,7 @@ class Recipe {
         Ingredients(name: 'Potato', quantity: 1, meassure: 'As Of U Need'),
         Ingredients(name: 'Oil', quantity: 1, meassure: 'One Bowl'),
       ],
+      4,
     ),
   ];
 }

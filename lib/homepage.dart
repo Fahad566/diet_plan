@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
                         image: Recipe.listofRecipes[index].imageUrl,
                         title: Recipe.listofRecipes[index].recipename,
                         ingredients: Recipe.listofRecipes[index].ingredients,
+                        servings: Recipe.listofRecipes[index].servings,
                       ),
                     ),
                   );
@@ -56,6 +57,7 @@ class HomePage extends StatelessWidget {
                 style:
                     const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
+              
             ],
           );
         },
